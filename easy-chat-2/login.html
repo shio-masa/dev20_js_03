@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Learn how to use the Firebase platform on the Web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Chat</title>
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-indigo.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- App Styling -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout">
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-desktop"></div>
+
+        <div class="mdl-card mdl-shadow--6dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-desktop">
+          <div class="mdl-card__title mdl-color--primary mdl-color-text--white relative">
+            <h2 class="mdl-card__title-text">Easy Chat</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Sample Login.</br></br>
+            Login with Google Auth.
+          </div>
+          <div class="mdl-card__actions">
+            <div class="mdl-grid">
+              <button id="sign-in"
+                class="mdl-cell mdl-cell--12-col mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white">Login</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-desktop"></div>
+      </div>
+    </main>
+  </div>
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCm3G-GiEYFq0sjPn23VN45m4rV5WREb68",
+    authDomain: "trial-chatapp-15cfc.firebaseapp.com",
+    projectId: "trial-chatapp-15cfc",
+    storageBucket: "trial-chatapp-15cfc.appspot.com",
+    messagingSenderId: "767661631635",
+    appId: "1:767661631635:web:40cfcdfb01dcd2858dc566"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+  <script src="scripts/login.js"></script>
+</body>
